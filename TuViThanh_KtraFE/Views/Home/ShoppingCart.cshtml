@@ -1,0 +1,205 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShoppingCart</title>
+    <meta lang="vi" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        /*header*/
+        html {
+            background-color: #FFFAF0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        #logoweb {
+            width: 70px;
+            margin-bottom: 25px;
+            background-size: cover;
+        }
+
+        .head-container {
+            
+        }
+
+        #header {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .first-line {
+            display: flex;
+            align-items: center;
+        }
+
+        .first-line ul.nav-items {
+            margin-bottom: 30px;
+        }
+
+        .first-line ul.nav-items li {
+            display: inline;
+            color: gray;
+        }
+
+
+
+        .first-line ul.nav-items li a {
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        #search {
+            margin-left: 20px;
+            margin-bottom: 50px;
+            width: 900px;
+        }
+
+        #iSearch {
+            width: 500px;
+            height: 30px;
+        }
+
+        #iSearch-btn {
+            color: blue;
+            background-color: transparent;
+            height: 30px;
+            
+        }
+
+        ul.items-list li {
+            display: inline;
+            color: gray;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        nav.items-list-nav {
+        }
+        /*content*/
+        .free-ship {
+            background-color: white;
+            width: 60%;
+
+        }
+        .free-ship p {
+            text-align: right;
+            color: green;
+            font-weight: bold;
+            
+        }
+        .select-items {
+            margin-top: 50px;
+            background-color: white;
+            width: 60%;
+            display: flex;
+            
+                        
+
+        }
+        .table-items-text{
+            width: 99%;
+           
+        }
+        .select-items td {
+                
+        }
+        .select-items.items-text{
+            
+        }
+        #test{
+            display: inline;
+        }
+        .test{
+            background-color: white;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <section class="head-container">
+            <div class="first-line">
+                <div class="first-line-items"></div>
+                <img id="logoweb" src="~/imgs/logotiki.png" />
+                <div id="search">
+                    <input type="text" id="iSearch" name="Search-bar" value="Giao nhanh 2H & đúng khung giờ" maxlength="50" size="30" />
+                    <input type="button" id="iSearch-btn" name="Search-btn" value="Tìm kiếm" />
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Astra</a></li>
+                    <li><a href="#">Tài Khoản</a></li>
+                    <li>  |  </li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="second-line">
+                <nav class="items-list-nav">
+                    <ul class="items-list">
+                        <li>khỏe đẹp</li>
+                        <li>nhà cửa</li>
+                        <li>sáchs</li>
+                        <li>thể thao</li>
+                        <li>trái cây</li>
+                        <li>thị, trứng</li>
+                        <li>rau củ quả</li>
+                        <li>sữa, bơ, phô mai</li>
+                        <li>hải sản</li>
+                        <li>gạo, mì ăn liền</li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+    <section id="content"></section>
+        <p>Giỏ Hàng</p>
+        <div id="test">
+            <div class="free-ship">
+                    <p>Free Ship 30K</p>
+                    <table>
+                        <tr>
+                            <td style="width:50%;"><hr style="border: 5px solid green; border-radius: 4px;" /></td>
+                            <td style="vertical-align:middle; text-align: center"><i class="fas fa-check" style="background-color:green;border-radius: 7px;"></i></td>
+                            <td style="width:50%"><hr style="border: 5px solid green; border-radius: 4px;" /></td>
+                            <td style="vertical-align:middle; text-align: center"><i class="fas fa-check" style="background-color:green;border-radius: 7px;"></i></td>
+                        </tr>
+                        <tr>
+                            <td style="color: green;">Mua</td>
+                            <td style="color: green;">149K</td>
+                            <td></td>
+                            <td style="color: green;">299K</td>
+                        </tr>
+                    </table>
+                
+            </div>
+            <div class="test">
+                <p>hello</p>
+            </div>
+        </div>
+        <div class="select-items">
+            <input type="checkbox"  />
+            <table class="table-items-text">
+                <tr class="items-text">
+                    <td>Tất cả</td>
+                    <td>Đơn giá</td>
+                    <td>Số lượng</td>
+                    <td>Thành tiền</td>
+                    <td style="text-align: right;"><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+            </table>
+        </div>
+        
+
+</body>
+</html>
